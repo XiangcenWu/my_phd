@@ -7,4 +7,3 @@
 // data you pass into the function's parameters.
 void change_argument(int x);
 
-extern int test_declaration;

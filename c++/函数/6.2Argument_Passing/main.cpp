@@ -15,5 +15,13 @@ int main(){
 
     // Pointer Parameters
 
-    print(test_declaration)
+
+
+    int n = 0;
+    // int i = n; // i是n的一个拷贝
+    // i = 2; // 给i重新赋值
+    print(n); // i的结果是2
+
+
+    print("Hello")
 }

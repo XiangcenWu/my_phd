@@ -29,7 +29,7 @@ parameter(形参)，argument(实参)。为什么要有形参和实参这两个�
 摘自[知乎 酷python](https://zhuanlan.zhihu.com/p/291202430)
 
 ## Two types of argument passing
-在传递函数的时候，实参和形参之间有着不同的联系，它们之间的联系取决于形参的类型。如果形参是引用（reference）那么形参和实参之间有着被绑定的关系，否则实参只是形参的一个拷贝。
+在传递参数的时候，实参和形参之间有着不同的联系，它们之间的联系取决于形参的类型。如果形参是引用（reference）那么形参和实参之间有着被绑定的关系，否则实参只是形参的一个拷贝。
 
 ## Section 6.2.1 Passing Arguments by Value
 当一个非引用类型的变量（nonreference type variable）被初始化之后，其变量的值是被拷贝过来的。
