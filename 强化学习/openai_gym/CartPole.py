@@ -2,5 +2,6 @@ import gym
 
 
 def random_cartpole():
-    print('This is the code to create a random cartpole agent')
+    e = gym.make('CartPole-v0')
+    print("This is the number{:.3f}".format(3.432432432))
 
