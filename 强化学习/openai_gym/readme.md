@@ -19,3 +19,7 @@ Discrete类里面储存了n个互斥的数。每一次只能sample其中一个�
 
 ### Box
 储存了一个n维张量，定义了最大数，最小数以及张量的shape。
+
+## 写一个可以生成随机action的agent
+详见CartPole.py文件
+
