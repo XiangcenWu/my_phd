@@ -7,7 +7,9 @@ import operations as op
 
 
 def main():
-    op.print_something()
+    print(op.OPS)
+
+    
 
 
 if __name__ == '__main__':

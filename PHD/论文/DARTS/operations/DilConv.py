@@ -46,11 +46,24 @@ class DilConv(nn.Module):
 
 if __name__ == "__main__":
     import torch
-    
-    net = DilConv(2, 3, (3, 3), 2, 2, 2)
 
-    x = torch.rand(4, 2, 36, 36)
+    input_channel = 3
+    output_channel = 6
+    kernel_size = 3 # 5
+    stride = 2
+    padding = 2
+    dilation = 2
 
-    o = net(x)
+    net = DilConv(
+        input_channel,
+        output_channel,
+        kernel_size,
+        stride,
+        padding,
+        dilation
+    )
 
-    print(o.shape)
+
+    x = torch.rand(4, 3, 64, 64)
+
+    print(net(x).shape)

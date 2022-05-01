@@ -23,7 +23,7 @@ if __name__ == "__main__":
     import torch
     net = FactorizedReduce(3, 6)
 
-    x = torch.rand(4, 3, 64, 64)
+    x = torch.rand(4, 3, 100, 100)
 
     print(net(x).shape)
 
