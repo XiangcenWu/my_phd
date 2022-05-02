@@ -3,6 +3,7 @@ from operations.Identity import *
 from operations.DilConv import *
 from operations.SepConv import *
 from operations.FactorizedReduce import *
+from operations.ReLUConvBN import *
 
 
 OPS = {

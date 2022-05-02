@@ -26,4 +26,3 @@ if __name__ == "__main__":
     x = torch.rand(4, 3, 100, 100)
 
     print(net(x).shape)
-
