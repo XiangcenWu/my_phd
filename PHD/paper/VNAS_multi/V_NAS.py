@@ -277,6 +277,7 @@ class Network(nn.Module):
     
 
     def forward(self, x):
+        # Skip connection has not been written yet
         x =  self.Encoder_4(self.cmd_4(self.Encoder_3(self.cmd_3(self.Encoder_2(self.cmd_2(self.Encoder_1(self.cmd_1(x))))))))
         return self.up_4(self.Decoder_4(self.Decoder_3(self.up_3(self.Decoder_2(self.up_2(self.Decoder_1(self.up_1(x))))))))
 
