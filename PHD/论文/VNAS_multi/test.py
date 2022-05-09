@@ -1,3 +1,5 @@
-from V_NAS import check
+from V_NAS import Network
 
-check()
+m = Network(14)
+
+m.log()

@@ -297,6 +297,12 @@ class Network(nn.Module):
         for _ in range(3):
             decoder.append(Decoder(num_features, num_features))
         return decoder
+
+    def log(self):
+        for i in self.cells:
+            for j in i:
+                print(j.alpha.data)
+
         
 
 def check():
