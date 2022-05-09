@@ -170,7 +170,7 @@ class Decoder(nn.Module):
 class Network(nn.Module):
     
     
-    def __init__(self):
+    def __init__(self, out_channel):
         super().__init__()
         # input = 1 64**3
         # output = 24 32**3
@@ -257,7 +257,7 @@ class Network(nn.Module):
         self.Decoder_4 = nn.Sequential(*self.init_decoder(24))
 
         self.up_4 = nn.Sequential(
-            nn.Conv3d(24, 1, 1, 1),
+            nn.Conv3d(24, out_channel, 1, 1),
             nn.Upsample((64, 64, 64), mode='trilinear')
         )
 
@@ -387,4 +387,4 @@ def check():
     print(model.Encoder_1[0].block_2d[0].weight.data[0, 0, 0])
     print(model.Encoder_1[0].alpha)
 
-check()
+# check()
